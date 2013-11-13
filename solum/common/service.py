@@ -18,6 +18,7 @@ import socket
 
 from oslo.config import cfg
 
+from solum import objects
 from solum.openstack.common import log
 
 
@@ -46,3 +47,4 @@ def prepare_service(argv=[]):
                                          ])
     cfg.CONF(argv[1:], project='solum')
     log.setup('solum')
+    objects.load()

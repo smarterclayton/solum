@@ -1,35 +1,32 @@
-*.py[cod]
 
+bin
+build
 # C extensions
-*.so
-
-# Packages
+.coverage
+develop-eggs
+dist
 *.egg
 *.egg-info
-dist
-build
 eggs
-parts
-bin
-var
-sdist
-develop-eggs
 .installed.cfg
+# Installer logs
 lib
 lib64
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
 *.mo
-
 # Mr Developer
 .mr.developer.cfg
+nosetests.xml
+# Packages
+parts
+pip-log.txt
 .project
+*.py[cod]
 .pydevproject
+sdist
+*.so
+solum/openstack/common/db/solum.sqlite
+.testrepository/
+.tox
+# Translations
+# Unit test / coverage reports
+var

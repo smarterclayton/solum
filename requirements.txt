@@ -3,3 +3,4 @@ Babel>=0.9.6
 SQLAlchemy>=0.7.8,<0.7.99
 oslo.config>=1.2.0
 iso8601>=0.1.4
+netaddr>=0.7.6

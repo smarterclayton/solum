@@ -21,6 +21,9 @@ import os
 import fixtures
 import testtools
 
+import __builtin__
+setattr(__builtin__, '_', lambda x: x)
+
 _TRUE_VALUES = ('true', '1', 'yes')
 
 
