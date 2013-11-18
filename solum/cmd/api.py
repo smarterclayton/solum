@@ -16,12 +16,10 @@
 
 import sys
 
-from solum import config
-from solum.openstack.common import log as logging
+from solum.common.service import prepare_service
 
 
 def main():
-    config.parse_args(sys.argv)
-    logging.setup('solum')
+    prepare_service(sys.argv)
 
     raise NotImplemented('Solum API not yet implemented.')

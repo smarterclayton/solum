@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-#
-# Copyright 2013 - Noorul Islam K M
-#
+# vim: tabstop=4 shiftwidth=4 softtabstop=4
+
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
@@ -14,17 +13,5 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-import __builtin__
-import fixtures
-
-from solum.openstack.common import test
-
-setattr(__builtin__, '_', lambda x: x)
-
-
-class BaseTestCase(test.BaseTestCase):
-    """Test base class."""
-
-    def setUp(self):
-        super(BaseTestCase, self).setUp()
-        self.log_fixture = self.useFixture(fixtures.FakeLogger())
+from solum.openstack.common import gettextutils
+gettextutils.install('solum')
