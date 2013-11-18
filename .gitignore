@@ -34,3 +34,6 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Binary artifacts
+solum/openstack/common/db/solum.sqlite

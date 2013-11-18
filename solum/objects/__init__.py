@@ -31,7 +31,7 @@ db_opts = [
 CONF = cfg.CONF
 CONF.register_opts(db_opts, "database")
 
-_BACKEND_MAPPING = {}
+_BACKEND_MAPPING = {'sqlalchemy': 'solum.objects.sqlalchemy'}
 
 LOG = logging.getLogger(__name__)
 
